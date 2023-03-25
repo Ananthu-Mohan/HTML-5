@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Tables</title>
+        <style>
+            #third{
+                border-collapse: collapse;
+                background-color: aqua;
+            }
+            #four{
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            #five{
+                border-style: dotted;
+            }
+            #six{
+                border-color: #96D4D4;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Table 1 : Normal Table</h2>
+        <hr />
+        <br />
+        <table border="2px">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table>
+        <h2>Table 2 : border-collapse:collapse Table</h2>
+        <hr />
+        <br />
+        <table border="1px" style="border-collapse: collapse;">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table>
+        <h2>Table 3 : Styled Table Border</h2>
+        <hr />
+        <br />
+        <table border="1px" id="third">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table>
+        <h2>Table 4 : Round Table Borders</h2>
+        <hr />
+        <br />
+        <table border="1px" id="four">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table> 
+        <h2>Table 5 : Dotted Table Borders</h2>
+        <hr />
+        <br />
+        <table border="1px" id="five">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table> 
+        <h2>Table 6 : Border Color</h2>
+        <hr />
+        <br />
+        <table border="1px" id="six">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table> 
+        <h2>Table 7 : HTML Table Column Width</h2>
+        <hr />
+        <br />
+        <table border="1px" style="width:50%">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table> 
+        <h2>Table 8 : HTML Table Row Height</h2>
+        <hr />
+        <br />
+        <table border="1px" style="width:50%">
+            <tr style="height:100px">
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Coder1</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Coder2</td>
+                <td>23</td>
+            </tr>
+        </table> 
+        <h2>Table 9 : Header for Multiple Columns(colspan)</h2>
+        <hr />
+        <br />
+        <table border="1px" style="width:50%">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+              </tr>
+        </table> 
+        <h2>Table 10 : HTML Table - Rowspan</h2>
+        <hr />
+        <br />
+        <table border="1px">
+            <tr>
+              <th>Name</th>
+              <td>Jill</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Phone</th>
+              <td>555-1234</td>
+            </tr>
+            <tr>
+              <td>555-8745</td>
+          </tr>
+        </table>
+        <h2>Table 11 : HTML Table - thead,tbody,tfoot -> Enables Table scrolling when the table size or content is large</h2>
+        <hr />
+        <br />
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan</td>
+                    <td>100$</td>
+                </tr>
+                <tr>
+                    <td>Feb</td>
+                    <td>200$</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Sum : $300</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
